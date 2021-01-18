@@ -1,0 +1,644 @@
+* {
+  color: inherit;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-kerning: auto;
+          font-kerning: auto;
+}
+
+html {
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  background-color: #f0f0f0;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  top: 0px;
+  width: 100%;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0px 2px 3px lightgray;
+          box-shadow: 0px 2px 3px lightgray;
+}
+
+.navbar .leftside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 400px;
+}
+
+.navbar .leftside .fbLogo {
+  margin: 10px;
+}
+
+.navbar .leftside .Search {
+  font-size: 16px;
+  background-color: #f0f0f0;
+  font-family: "Helvetica", FontAwesome, sans-serif;
+  border-radius: 25px;
+  padding: 10px;
+  width: 235px;
+  border: none;
+}
+
+.navbar .leftside .Search:focus {
+  outline: none;
+}
+
+.navbar .midLogos {
+  height: 100%;
+  margin: 0;
+  padding: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  width: 580px;
+}
+
+.navbar .midLogos a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 40px;
+}
+
+.navbar .midLogos a:hover {
+  background-color: #e7e4e4;
+  border-radius: 10px;
+}
+
+.navbar .rightLogos {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar .rightLogos .items {
+  background-color: lightgray;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 7px;
+}
+
+.navbar .rightLogos .items:hover {
+  background-color: gray;
+}
+
+.navbar .profilePic {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  background-color: lightgray;
+}
+
+.navbar .name {
+  font-size: 18px;
+  position: relative;
+  top: -8px;
+}
+
+.leftColumn {
+  margin: 0px;
+  padding: 0px;
+  font-size: 19px;
+  width: 360px;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  top: 62px;
+  overflow: auto;
+}
+
+.leftColumn .top {
+  list-style-type: none;
+  padding: 7px 0px 0px 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 7px 0px;
+}
+
+.leftColumn .top .leftProfile {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: lightgray;
+}
+
+.leftColumn .top .leftTopIcon {
+  padding: 7px 5px 7px 10px;
+  border-radius: 10px;
+}
+
+.leftColumn .top .leftTopIcon:hover {
+  background-color: #e0e0e0;
+}
+
+.leftColumn .top .seeMore {
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.leftColumn .top .name {
+  position: relative;
+  top: -7px;
+  font-family: bold, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.leftColumn .YourShortcuts {
+  color: grey;
+  margin: 12px 0px 15px 17px;
+}
+
+.leftColumn .bottom {
+  list-style-type: none;
+  padding: 7px 0px 0px 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.leftColumn .bottom .leftPages {
+  border-radius: 20%;
+  width: 40px;
+  height: 34px;
+  background-color: lightgray;
+}
+
+.leftColumn .bottom .leftbotIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  padding: 7px 5px 1px 10px;
+}
+
+.leftColumn .bottom .leftbotIcon:hover {
+  background-color: #dfdfdf;
+}
+
+.leftColumn .bottom .seeMore {
+  background-color: lightgray;
+  border-radius: 50%;
+}
+
+.leftColumn .bottom .groupName {
+  word-break: break-all;
+  font-family: bold, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  position: relative;
+  top: -12px;
+}
+
+.leftColumn .bottom .groupName1 {
+  font-family: bold, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  position: absolute;
+}
+
+.rightColumn {
+  position: fixed;
+  top: 60px;
+  right: 0px;
+  bottom: 0px;
+  width: 350px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.rightColumn .texts {
+  color: grey;
+}
+
+.rightColumn .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rightColumn .cont .icons {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rightColumn .cont .imglink {
+  margin-right: 5px;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.rightColumn .cont .imglink:hover {
+  background-color: lightgray;
+}
+
+.rightColumn .cont .imglink:last-child {
+  margin: 0px;
+}
+
+.rightColumn .friends {
+  list-style-type: none;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 0px;
+}
+
+.rightColumn .friends .frProfile {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: lightgray;
+}
+
+.rightColumn .friends .frName {
+  position: relative;
+  top: -10px;
+  font-family: bold, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.rightColumn .friends .friend {
+  padding: 7px 5px 7px 0px;
+  border-radius: 10px;
+}
+
+.rightColumn .friends .friend:hover {
+  background-color: #e0e0e0;
+}
+
+.middle {
+  position: absolute;
+  top: 55px;
+  right: 360px;
+  left: 360px;
+  bottom: 0px;
+}
+
+.middle .story {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 190px;
+  width: 580px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  list-style-type: none;
+}
+
+.middle .story1 {
+  border-radius: 10% 10% 0% 0%;
+  width: 105px;
+  height: 115px;
+  background-color: lightgray;
+}
+
+.middle .storyBack {
+  border-radius: 10%;
+  width: 105px;
+  height: 180px;
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 3px gray, 2px 0px 3px gray;
+          box-shadow: 0px 2px 3px gray, 2px 0px 3px gray;
+}
+
+.middle .storyBack:hover {
+  -webkit-filter: brightness(87%);
+          filter: brightness(87%);
+  -webkit-box-shadow: 0px 3px 3px gray, 3px 0px 3px gray;
+          box-shadow: 0px 3px 3px gray, 3px 0px 3px gray;
+}
+
+.middle .names {
+  word-break: break-all;
+  font-size: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.middle .storyN {
+  border-radius: 10%;
+  width: 105px;
+  height: 115px;
+  background-color: lightgray;
+}
+
+.middle name {
+  text-align: center;
+  font-size: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.middle .post {
+  background-color: white;
+  width: 580px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 3px gray;
+          box-shadow: 0px 1px 3px gray;
+}
+
+.middle .post .postTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.middle .post .prof {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: lightgray;
+}
+
+.middle .post .search {
+  font-size: 16px;
+  background-color: #f0f0f0;
+  font-family: "Helvetica", FontAwesome, sans-serif;
+  border-radius: 25px;
+  padding: 10px 0px 10px 10px;
+  width: 520px;
+  border: none;
+}
+
+.middle .post .search:focus {
+  outline: none;
+}
+
+.middle .post .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+
+.middle .post .Name {
+  position: relative;
+  top: -7px;
+  font-family: bold, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.middle .meme {
+  background-color: white;
+  width: 580px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 3px gray;
+          box-shadow: 0px 1px 3px gray;
+}
+
+.middle .meme .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.middle .meme .top .author {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: lightgray;
+}
+
+.middle .meme .top .name {
+  position: relative;
+  top: -10px;
+  font-family: bold, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  width: 500px;
+  padding-left: 5px;
+}
+
+.middle .meme .top .view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  margin-top: -10px;
+  color: gray;
+  padding-left: 5px;
+}
+
+.middle .meme .top .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: flex-end;
+  width: 30px;
+  height: 30px;
+  margin-top: -6px;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.middle .meme .top .more:hover {
+  background-color: lightgray;
+}
+
+.middle .meme .mainPost .photo {
+  width: 100%;
+}
+
+.middle .meme .mainPost .reacts {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.middle .meme .mainPost .reacts .quantity {
+  font-size: 20px;
+  position: relative;
+}
+
+.middle .meme .mainPost .reacts .quantity:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.middle .meme .mainPost .choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+
+.middle .meme .mainPost .Name {
+  position: relative;
+  top: -7px;
+  font-family: bold, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.middle .meme .mainPost .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.middle .meme .mainPost .comment .prof {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: lightgray;
+}
+
+.middle .meme .mainPost .comment .input {
+  font-size: 16px;
+  background-color: #f0f0f0;
+  font-family: "Helvetica", FontAwesome, sans-serif;
+  border-radius: 25px;
+  padding: 10px 300px 10px 10px;
+  border: none;
+}
+
+.middle .meme .mainPost .comment .input:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 790px) {
+  .post {
+    width: 680px;
+  }
+  .meme {
+    width: 680px;
+  }
+  .storyBack {
+    width: 500px;
+  }
+  .story {
+    width: 680px;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .leftColumn {
+    display: none;
+  }
+  .Search {
+    display: none;
+  }
+  .middle {
+    position: absolute;
+    left: 0px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .rightColumn {
+    display: none;
+  }
+  .middle {
+    position: absolute;
+    left: 0 px;
+    right: 0px;
+  }
+  .navbar {
+    position: absolute;
+    left: 0 px;
+    right: 0px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .rightColumn {
+    display: none;
+  }
+  .middle {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+  }
+}
+/*# sourceMappingURL=facebook-project.css.map */
